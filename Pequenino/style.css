@@ -93,7 +93,7 @@ header {
     align-content: center;
     justify-items: center;
     background: url(img/roxo\ com\ linhas.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
     z-index: 2;
 }
