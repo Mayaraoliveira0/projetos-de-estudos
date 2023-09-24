@@ -50,7 +50,7 @@ header {
     background-size: cover;
     max-width: 90%;
     width: 1150px;
-    height: 500px;
+    height: 651px;
     top: 0px;
     right: 0px;
     z-index: 1;
@@ -75,7 +75,7 @@ header {
     content: "";
     display: block;
     position: absolute;
-    left: 135px;
+    left: 125px;
     top: 40px;
     background: url(img/logo-pequenino.svg) no-repeat center;
     background-size: cover;
