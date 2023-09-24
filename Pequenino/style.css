@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none; 
+    font-family: Montserrat, arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 99;
+}
+
+.logo-aude img {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.menu-principal ul {
+    display: flex;
+    gap: 80px;
+    margin-right: 150px;
+    letter-spacing: 3px;
+}
+
+.menu-principal a {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 99;
+}
+
+.inicio {
+    display: grid;
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+.inicio::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url(img/hero-background.svg) no-repeat center;
+    background-size: cover;
+    max-width: 90%;
+    width: 1150px;
+    height: 699px;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.inicio-conteudo {
+    align-self: center;
+    margin-left: 160px;
+}
+
+.inicio-conteudo h1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #782677;
+    position: relative;
+    z-index: 1;
+}
+
+.inicio-conteudo h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 135px;
+    top: 50px;
+    background: url(img/logo-pequenino.svg) no-repeat center;
+    background-size: cover;
+    width: 220px;
+    height: 80px;
+}
+
+.inicio-conteudo p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.protagonistas {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    background: url(img/roxo\ com\ linhas.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 2;
+}
+
+.protagonistas-container {
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 2fr 3fr;
+    max-width: 1200px;
+}
+
+.protagonistas-img img {
+    width: 500px;
+    margin-left: 50px;
+}
+.protagonistas-conteudo {
+    align-self: center;
+
+    position: relative;
+}
+
+.protagonistas-conteudo h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.protagonistas-conteudo h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: -35px;
+    background: url(img/Protagonistas.png) no-repeat center;
+    background-size: contain;
+    width: 600px;
+    height: 83px;
+}
+
+.protagonistas-espaco {
+    letter-spacing: 5px;
+}
+.protagonistas-conteudo h2 strong {
+    font-size: 3rem;
+    color: #FFC44E;
+}
+
+.protagonistas-conteudo p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.beneficios {
+    text-align: center;
+}
+
+.beneficios-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.beneficios-titulo span {
+    color: #22376E;
+    font-size: 2rem;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.beneficios-titulo h2 {
+    color: #FFC44E;
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+}
+
+.beneficios-titulo img {
+    padding-top: 12px;
+}
+
+.beneficios-lista {
+    display: grid;
+    justify-items: center;
+    margin: 80px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 55rem;
+}
+
+.beneficios-lista li {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+} 
+
+.beneficios-lista p {
+    color: #1D3060;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.volumes {
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    background: #782677;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+}
+
+.volumes-img2 img {
+    max-width: 70%;
+    align-self: center;
+}
+
+.volumes-img1 img {
+    max-width: 90%;
+    margin-left: 150px;
+}
+
+.fale-conosco {
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    background-color: #FFC44E;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: 99;
+}
+
+.fale-conosco::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background: url(img/onda-laranja.svg) no-repeat center;  
+    background-size: auto;
+    max-width: 100%;
+    width: 100vw;
+    height: 500px;
+    top: -225px;
+    left: 0px;
+    z-index: -1;
+}
+
+.fale-conosco-titulo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.fale-conosco-titulo h2 {
+    font-size: 2rem;
+    color: #22376E;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    position: relative;
+}
+
+.fale-conosco-titulo h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: 35px;
+    background: url(img/CUSTO-BENEFÍCIO.png) no-repeat center;
+    background-size: cover;
+    width: 350px;
+    height: 60px;
+}
+
+.fale-conosco-titulo p {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111;
+}
+
+.fale-conosco a {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background: linear-gradient(to right, #572C79 0%, #91176E 66%, #E30171 100%);
+    color: white;
+    border-radius: 70px;
+    padding: 20px 60px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.50);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-ul {
+    display: grid;
+}
+
+.footer-ul a {
+    color: #484746;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+

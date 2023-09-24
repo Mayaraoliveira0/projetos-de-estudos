@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fonte-t {
+    font-family: 'Handlee', cursive;
+}
+    
+.fonte-g {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* header */
+
+header {
+    display: flex;
+    padding: 40px 200px;
+    background-color: #F4DAE3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: block;
+}
+.logo {
+    font-size: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(65, 61, 61);
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+}
+
+.menu a {
+    color: rgb(65, 61, 61);
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #a74e6d;
+}
+
+/* main */
+
+main{
+    background-color: #F4DAE3;
+}
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.apresentacao-imagem { 
+    position: relative;
+    z-index: 1;
+}
+
+.apresentacao-imagem::before {
+    content: "";
+    width: 100%;
+    height: 94%;
+    background-image: url('img/me_bkg.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.desenvolvedora {
+    font-size: 2.8rem;
+}
+
+.apresentacao-h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+}
+.apresentacao-p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: #a74e6d;
+}
+
+/* Seção Experiencias */
+
+.experiencias {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experiencias h2{
+    font-family: 'Handlee', cursive;
+    font-size: 7rem;
+    word-break: break-all;
+}
+
+.experiencias-p1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+
+.experiencias-caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #a74e6d;
+}
