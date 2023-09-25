@@ -37,12 +37,16 @@ header {
 
 .inicio {
     display: grid;
-    background: white;
+    background-image: url(img/hero-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x:  100px;
     height: 100vh;
     position: relative;
 }
 
-.inicio::before {
+/* .inicio::before {
     position: absolute;
     display: block;
     content: "";
@@ -54,7 +58,7 @@ header {
     top: 0px;
     right: 0px;
     z-index: 1;
-}
+} */
 
 .inicio-conteudo {
     align-self: center;
@@ -322,3 +326,121 @@ footer ul {
     letter-spacing: 2px;
 }
 
+@media (max-width: 1400px) {
+    .menu-principal ul {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .inicio {
+        background-position-x: -80px;
+    }
+    .inicio-conteudo {
+        margin-left: 80px;
+    }
+    .protagonistas {
+        height: 80vh;
+    }
+    .protagonistas-container {
+        gap: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .protagonistas-conteudo h2 {
+        font-size: 2rem;
+    }
+    .protagonistas-conteudo h2 strong {
+        font-size: 2rem;
+    }
+    .protagonistas-conteudo h2::before {
+        top: 75px;
+        left: -15px;
+        height: 60px;
+        width: 350px;
+    }
+    .protagonistas-img img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .volumes {
+        padding: 0px;
+        height: 80vh;
+    }
+    .fale-conosco {
+        padding-bottom: 20px;
+        gap: 0;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 1050px) {
+    .inicio {
+        /* background-position-x: -200px; */
+        background-position: center;
+    }
+    .inicio-conteudo h1 {
+        text-shadow: 1px 1px 5px white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        background-color: white;
+    }
+    .menu-principal ul {
+        gap: 20px;
+    }
+    .menu-principal a {
+        color: #782677;
+    }
+    .inicio {
+        background-position: left;
+        background-position-x: -110px;
+    }
+    .protagonistas-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .protagonistas-conteudo p {
+        margin-bottom: 20px;
+    }
+    .protagonistas-img img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .beneficios-lista {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 40rem;
+    }
+    .volumes {
+        grid-template-columns: 1fr 2fr;
+        height: 50vh;
+        align-content: space-between;
+    }
+    .fale-conosco {
+        height: 45vh;
+    }
+    .fale-conosco-logo {
+        height: 50px;
+    }
+    .fale-conosco-titulo img {
+        height: 100px;
+    }
+    .fale-conosco-titulo h2 {
+        font-size: 1.5rem;
+    }
+    .fale-conosco-titulo h2::before {
+        left: -3px;
+        top: 35px;
+        width: 275px;
+        height: 25px;
+    }
+    .fale-conosco-titulo p {
+        font-size: 1.3rem;
+    }
+    .fale-conosco a {
+        padding: 16px 38px;
+    }
+}
